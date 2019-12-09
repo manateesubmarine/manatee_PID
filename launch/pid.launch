@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="manatee_PID" name="pid" type="pid" output="screen"
+      args="248.4207 -0.6 0.6
+      ../catkin/src/manatee_PID/pid.conf
+      ../catkin/src/manatee_PID/depth.csv
+      TIME,DEPTH /submarine/pressure /submarine/fins/0/input
+      /submarine/fins/1/input">
+    </node>
+</launch>
